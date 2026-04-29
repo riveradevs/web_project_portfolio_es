@@ -3,62 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Porfolio</title>
+    <title>My Portfolio</title>
+
+    <!-- CSS externo -->
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__textbloq">
-          <h1 class="header__title-name">
-            <span>Ignacio</span>
-            <span>Rivera</span>
-          </h1>
+    <div class="page">
+      <header class="header">
+        <div class="header__ellipse"></div>
 
-          <p class="header__sub-title-name">
-            Desarrollador Full-Stack Junior | HTML, CSS, JavaScript
-          </p>
+        <div class="header__container">
+          <div class="header__content">
+            <h1 class="header__title">
+              <span class="header__title-line">Ignacio</span>
+              <span class="header__title-line">Rivera</span>
+            </h1>
 
-          <p class="header__about-me-text">
-            Desarrollador web junior con experiencia práctica creando interfaces
-            limpias y responsivas con HTML, CSS, JavaScript y React, así como
-            implementando lógica básica de back-end. Ha trabajado en proyectos
-            formativos que siguen procesos reales de desarrollo, usando Git,
-            GitHub y Figma. Disfruta colaborar en equipo, mantener un código
-            claro y resolver problemas de forma estructurada. Motivado por
-            seguir aprendiendo, asumir nuevos retos y aprovechar oportunidades
-            para crecer como desarrollador.
-          </p>
+            <p class="header__subtitle">
+              Desarrollador Full-Stack Junior | HTML, CSS, JavaScript
+            </p>
 
-          <div class="header__buttons">
-            <button class="header__button">Descargar CV</button>
-            <button class="header__button">Enlace a GitHub</button>
-            <button class="header__button">Hablemos</button>
+            <p class="header__description">
+              Desarrollador web junior con experiencia práctica creando
+              interfaces limpias y responsivas con HTML, CSS, JavaScript y
+              React, así como implementando lógica básica de back-end. Ha
+              trabajado en proyectos formativos que siguen procesos reales de
+              desarrollo, usando Git, GitHub y Figma. Disfruta colaborar en
+              equipo, mantener un código claro y resolver problemas de forma
+              estructurada. Motivado por seguir aprendiendo, asumir nuevos retos
+              y aprovechar oportunidades para crecer como desarrollador.
+            </p>
+
+            <nav class="header__links">
+              <a class="header__link" href="#" download>Descargar CV</a>
+              <a class="header__link" href="#" target="_blank"
+                >Enlace a GitHub</a
+              >
+              <a class="header__link" href="#contacto">Hablemos</a>
+            </nav>
+          </div>
+
+          <div class="header__photo-wrapper">
+            <div class="header__photo"></div>
           </div>
         </div>
+      </header>
 
-        <div class="header__photo"></div>
-      </div>
-    </header>
+      <section class="skills">
+        <h2 class="skills__title">Habilidades y herramientas</h2>
 
-    <main class="main">
-      <section class="hero container">
-        <h2>Bienvenido</h2>
-        <p>Este es un layout responsive base</p>
+        <div class="skills__icons">
+          <img src="./images/icon-1.svg" alt="Icono 1" />
+          <img src="./images/icon-2.svg" alt="Icono 2" />
+          <img src="./images/icon-3.svg" alt="Icono 3" />
+          <img src="./images/icon-4.svg" alt="Icono 4" />
+          <img src="./images/icon-5.svg" alt="Icono 5" />
+          <img src="./images/icon-6.svg" alt="Icono 6" />
+        </div>
       </section>
 
-      <section class="content container">
-        <div class="card">Bloque 1</div>
-        <div class="card">Bloque 2</div>
-        <div class="card">Bloque 3</div>
+      <section class="projects">
+        <h2 class="projects__title">Proyectos destacados</h2>
       </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <p>© 2026 Mi sitio</p>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>
