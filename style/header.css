@@ -32,22 +32,44 @@
   position: relative;
   z-index: 2;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
   padding-left: 120px;
   padding-right: 120px;
-  gap: 20px;
+  padding-top: 0;
 }
 
-.header__content {
-  width: 793px;
-  padding-top: 100px;
-  flex-shrink: 0;
+/* FOTO */
+.header__photo-wrapper {
+  float: right;
+
+  width: 387px;
+  height: 500px;
+  max-width: 100%;
+
+  margin-top: clamp(40px, calc(145.16px - 7.3vw), 89px);
+  margin-left: clamp(16px, 4vw, 60px);
+  margin-bottom: 30px;
+
+  overflow: hidden;
+  border-radius: 24px;
+  background: #222;
 }
 
+.header__photo {
+  position: relative;
+  z-index: 3;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* TEXTO */
 .header__title {
+  padding-top: 100px;
+
   font-family: "Archivo Black", Arial, sans-serif;
   font-size: clamp(36px, 5vw, 72px);
   font-weight: 400;
@@ -67,16 +89,18 @@
 }
 
 .header__description {
-  width: 790px;
-  height: auto;
   font-size: clamp(16px, 1.25vw, 18px);
   line-height: 1.45;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.85);
+
   margin-bottom: 30px;
 }
 
+/* LINKS */
 .header__links {
+  clear: both;
+
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -129,28 +153,53 @@
   }
 }
 
-.header__photo-wrapper {
-  width: 387px;
-  height: 500px;
-  max-width: 100%;
+/* HEADER: 1440px → 529px */
+@media (max-width: 1439px) and (min-width: 529px) {
+  .header__container {
+    padding-left: clamp(48px, 8vw, 120px);
+    padding-right: clamp(48px, 8vw, 120px);
+  }
 
-  margin-top: clamp(40px, calc(145.16px - 7.3vw), 89px);
-
-  flex-shrink: 0;
-
-  overflow: hidden;
-  border-radius: 24px;
+  .header__photo-wrapper {
+    width: clamp(200px, 28vw, 387px);
+    aspect-ratio: 387 / 500;
+    height: auto;
+  }
 }
 
-.header__photo {
-  position: relative;
-  z-index: 3;
+/* HEADER: 528px hacia abajo */
+@media (max-width: 528px) {
+  .header {
+    min-height: auto;
+  }
 
-  display: block;
+  .header__container {
+    display: flex;
+    flex-direction: column;
 
-  width: 100%;
-  height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
 
-  object-fit: cover;
-  object-position: center center;
+  .header__photo-wrapper {
+    float: none;
+
+    order: -1;
+
+    width: min(100%, 300px);
+    aspect-ratio: 387 / 500;
+    height: auto;
+
+    margin: 0 auto 32px;
+  }
+
+  .header__title {
+    padding-top: 0;
+  }
+
+  .header__links {
+    clear: none;
+    gap: 20px;
+  }
 }
