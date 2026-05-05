@@ -1,0 +1,175 @@
+/* PROYECTOS */
+.projects {
+  position: relative;
+  z-index: 2;
+
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.projects__title {
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: clamp(28px, 2.8vw, 40px);
+  color: #fff;
+  font-weight: 400;
+}
+
+.projects__grid {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-column {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-card--image {
+  position: relative;
+  aspect-ratio: 590 / 330;
+  height: auto;
+}
+
+.project-card--image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  display: block;
+}
+
+/* ICONOS SOBRE IMAGEN */
+.project-card__icons {
+  position: absolute;
+  left: clamp(12px, 1.5vw, 20px);
+  bottom: clamp(12px, 1.5vw, 20px);
+
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 1vw, 10px);
+
+  z-index: 2;
+}
+
+.project-card__icons img {
+  width: clamp(30px, 3vw, 40px);
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* CARD DE TEXTO */
+.project-card--info {
+  width: 100%;
+  min-height: 330px;
+  height: auto;
+
+  background: #1c1c1c;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+}
+
+.project-card__title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: clamp(20px, 1.7vw, 24px);
+  font-weight: 700;
+  color: #fff;
+
+  width: 100%;
+  max-width: 339px;
+  height: auto;
+
+  margin: 0 0 20px 0;
+}
+
+.project-card__text-container {
+  width: 100%;
+  height: auto;
+}
+
+.project-card__text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: clamp(16px, 1.25vw, 18px);
+  font-weight: 350;
+  line-height: 1.4;
+  color: #fff;
+
+  margin: 0;
+}
+
+.project-card__text + .project-card__text {
+  margin-top: 16px;
+}
+
+.project-card__links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  margin-top: auto;
+  padding-top: 30px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.project-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+}
+
+.project-link--demo {
+  color: #6d6dff;
+}
+
+.project-link--demo:hover {
+  color: #a3a3ff;
+}
+
+.project-link--github {
+  color: #ffffff;
+}
+
+.project-link--github:hover {
+  color: #cccccc;
+}
+
+.project-link img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  order: 0;
+}
+
+.project-link span {
+  order: 1;
+}

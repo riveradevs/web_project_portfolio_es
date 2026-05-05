@@ -1,0 +1,156 @@
+/* HEADER */
+.header {
+  position: relative;
+  min-height: 585px;
+  background: #000;
+  overflow: visible;
+}
+
+.header__ellipse {
+  position: absolute;
+  width: 1400px;
+  height: 1000px;
+  top: -100px;
+  right: -350px;
+  z-index: 1;
+  pointer-events: none;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(125, 125, 255, 0.58) 0%,
+    rgba(109, 109, 255, 0.36) 18%,
+    rgba(109, 109, 255, 0.2) 40%,
+    rgba(76, 26, 151, 0.12) 60%,
+    rgba(20, 10, 45, 0.06) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  filter: blur(160px);
+}
+
+.header__container {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding-left: 120px;
+  padding-right: 120px;
+  gap: 20px;
+}
+
+.header__content {
+  width: 793px;
+  padding-top: 100px;
+  flex-shrink: 0;
+}
+
+.header__title {
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: clamp(36px, 5vw, 72px);
+  font-weight: 400;
+  line-height: 1.08;
+  margin-bottom: 15px;
+}
+
+.header__title-line {
+  display: block;
+}
+
+.header__subtitle {
+  font-size: clamp(16px, 1.25vw, 18px);
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+.header__description {
+  width: 790px;
+  height: auto;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.45;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+}
+
+.header__links {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.header__link::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  background: linear-gradient(90deg, #4c1a97, #6d6dff);
+  transform-origin: center;
+}
+
+.header__link:hover {
+  transform: translateY(-2px);
+}
+
+.header__link:hover::after {
+  animation: pulseBar 1.2s ease-in-out infinite;
+}
+
+@keyframes pulseBar {
+  0% {
+    transform: scaleX(1);
+  }
+
+  25% {
+    transform: scaleX(1.08);
+  }
+
+  50% {
+    transform: scaleX(0.85);
+  }
+
+  75% {
+    transform: scaleX(1.05);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.header__photo-wrapper {
+  width: 387px;
+  height: 500px;
+  max-width: 100%;
+
+  margin-top: clamp(40px, calc(145.16px - 7.3vw), 89px);
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.header__photo {
+  position: relative;
+  z-index: 3;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+}

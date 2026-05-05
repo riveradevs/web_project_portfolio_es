@@ -1,0 +1,168 @@
+/* ========================= */
+/* HEADER: 1440px → 529px */
+/* ========================= */
+@media (max-width: 1439px) and (min-width: 529px) {
+  .header__container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-left: clamp(48px, 8vw, 120px);
+    padding-right: clamp(48px, 8vw, 120px);
+
+    gap: clamp(16px, 4vw, 60px);
+  }
+
+  .header__content {
+    width: auto;
+    max-width: 793px;
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-top: 100px;
+  }
+
+  .header__description {
+    width: 100%;
+    height: auto;
+  }
+
+  .header__photo-wrapper {
+    width: clamp(200px, 28vw, 387px);
+    aspect-ratio: 387 / 500;
+    height: auto;
+
+    margin-top: clamp(40px, calc(145.16px - 7.3vw), 89px);
+
+    flex: 0 0 auto;
+  }
+
+  .skills {
+    padding-left: clamp(48px, 8vw, 120px);
+    padding-right: clamp(48px, 8vw, 120px);
+  }
+
+  .skills__icons {
+    gap: clamp(32px, 8vw, 180px);
+  }
+}
+
+/* ========================= */
+/* HEADER: 528px hacia abajo */
+/* ========================= */
+@media (max-width: 528px) {
+  .header {
+    min-height: auto;
+  }
+
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    gap: 32px;
+  }
+
+  .header__photo-wrapper {
+    order: -1;
+
+    width: min(100%, 300px);
+    aspect-ratio: 387 / 500;
+    height: auto;
+
+    margin-top: 30px;
+
+    flex: 0 0 auto;
+    align-self: center;
+  }
+
+  .header__photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header__content {
+    width: 100%;
+    max-width: 100%;
+
+    padding-top: 0;
+
+    flex: 0 0 auto;
+    min-width: 0;
+  }
+
+  .header__title,
+  .header__subtitle,
+  .header__description,
+  .header__links {
+    max-width: 100%;
+  }
+
+  .header__description {
+    width: 100%;
+    height: auto;
+  }
+
+  .header__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+/* ========================= */
+/* 768px hacia abajo */
+/* SOLO SKILLS + PROJECTS */
+/* ========================= */
+@media (max-width: 768px) {
+  .skills,
+  .projects {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .skills__icons {
+    flex-wrap: wrap;
+    gap: 40px 70px;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card--image {
+    aspect-ratio: 590 / 330;
+    height: auto;
+  }
+
+  .project-card--info {
+    min-height: 330px;
+    height: auto;
+  }
+}
+
+/* ========================= */
+/* 480px hacia abajo */
+/* ========================= */
+@media (max-width: 480px) {
+  .footer__contact {
+    font-size: 28px;
+  }
+
+  .footer__mail {
+    font-size: 18px;
+  }
+
+  .footer__social {
+    width: auto;
+    justify-content: center;
+    gap: clamp(16px, 7vw, 32px);
+    margin-bottom: 80px;
+  }
+
+  .footer__social img {
+    width: 24px;
+    height: 24px;
+  }
+}
