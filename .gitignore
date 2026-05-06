@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Dependencias
+node_modules/
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp

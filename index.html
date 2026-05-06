@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-
-    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/index.css" />
     <link rel="stylesheet" href="./style/header.css" />
     <link rel="stylesheet" href="./style/skills.css" />
     <link rel="stylesheet" href="./style/projects.css" />
@@ -48,121 +48,149 @@
           </p>
 
           <nav class="header__links">
-            <a class="header__link" href="#" download>Descargar CV</a>
-            <a class="header__link" href="#" target="_blank">Enlace a GitHub</a>
+            <a
+              class="header__link"
+              href="./files/CV_Ignacio_Rivera.pdf"
+              download
+              >Descargar CV</a
+            >
+            <a
+              class="header__link"
+              href="https://github.com/riveradevs/"
+              target="_blank"
+              >Enlace a GitHub</a
+            >
             <a class="header__link" href="#contacto">Hablemos</a>
           </nav>
         </div>
       </header>
+      <main>
+        <section class="skills">
+          <h2 class="skills__title">Habilidades y herramientas</h2>
 
-      <section class="skills">
-        <h2 class="skills__title">Habilidades y herramientas</h2>
-
-        <div class="skills__icons">
-          <img src="./images/icon-1.svg" alt="HTML" />
-          <img src="./images/icon-2.svg" alt="CSS" />
-          <img src="./images/icon-3.svg" alt="JavaScript" />
-          <img src="./images/icon-4.svg" alt="React" />
-          <img
-            class="skills__icons-55px"
-            src="./images/icon-5.svg"
-            alt="GitHub"
-          />
-          <img class="skills__icons-55px" src="./images/icon-6.svg" alt="GPT" />
-        </div>
-      </section>
-
-      <section class="projects">
-        <h2 class="projects__title">Proyectos destacados</h2>
-
-        <div class="projects__grid">
-          <div class="project-column">
-            <article class="project-card project-card--image">
-              <img
-                src="./images/screenshot-1.jpg"
-                alt="Imagen del proyecto Página web de una cafetería"
-              />
-
-              <div class="project-card__icons">
-                <img src="./images/icon-1.svg" alt="HTML" />
-                <img src="./images/icon-2.svg" alt="CSS" />
-              </div>
-            </article>
-
-            <article class="project-card project-card--info">
-              <h3 class="project-card__title">Página web de una cafetería</h3>
-
-              <div class="project-card__text-container">
-                <p class="project-card__text">
-                  Desarrollo de una landing page responsiva para una cafetería
-                  siguiendo un brief de diseño. Incluye estructura semántica,
-                  maquetación con Flexbox, creación de secciones nuevas y un
-                  formulario de contacto funcional.
-                </p>
-
-                <p class="project-card__text">
-                  Logro: Implementé desde cero el diseño completo de la página,
-                  organicé el proyecto con buenas prácticas y publiqué la
-                  versión final utilizando GitHub Pages.
-                </p>
-              </div>
-
-              <div class="project-card__links">
-                <a href="#" class="project-link project-link--demo">
-                  <img src="./images/Union.svg" alt="Demo en vivo" />
-                  <span>Demo en vivo</span>
-                </a>
-
-                <a href="#" class="project-link project-link--github">
-                  <img src="./images/icon-5.svg" alt="GitHub" />
-                  <span>GitHub</span>
-                </a>
-              </div>
-            </article>
+          <div class="skills__icons">
+            <img src="./images/icon-1.svg" alt="HTML" />
+            <img src="./images/icon-2.svg" alt="CSS" />
+            <img src="./images/icon-3.svg" alt="JavaScript" />
+            <img src="./images/icon-4.svg" alt="React" />
+            <img
+              class="skills__icons-55px"
+              src="./images/icon-5.svg"
+              alt="GitHub"
+            />
+            <img
+              class="skills__icons-55px"
+              src="./images/icon-6.svg"
+              alt="GPT"
+            />
           </div>
+        </section>
 
-          <div class="project-column">
-            <article class="project-card project-card--image">
-              <img
-                src="./images/Rectangle 5.jpg"
-                alt="Imagen del segundo proyecto"
-              />
+        <section class="projects">
+          <h2 class="projects__title">Proyectos destacados</h2>
 
-              <div class="project-card__icons">
-                <img src="./images/icon-5.svg" alt="HTML" />
-                <img src="./images/icon-6.svg" alt="CSS" />
-              </div>
-            </article>
+          <div class="projects__grid">
+            <div class="project-column">
+              <article class="project-card project-card--image">
+                <img
+                  src="./images/screenshot-1.jpg"
+                  alt="Imagen del proyecto Página web de una cafetería"
+                />
 
-            <article class="project-card project-card--info">
-              <h3 class="project-card__title">Responsive Portfolio Website</h3>
+                <div class="project-card__icons">
+                  <img src="./images/icon-1.svg" alt="HTML" />
+                  <img src="./images/icon-2.svg" alt="CSS" />
+                </div>
+              </article>
 
-              <div class="project-card__text-container">
-                <p class="project-card__text">
-                  Portfolio web responsivo desarrollado con HTML y CSS, enfocado
-                  en diseño moderno, estructura modular y adaptación fluida
-                  entre desktop, tablet y mobile.
-                </p>
-              </div>
+              <article class="project-card project-card--info">
+                <h3 class="project-card__title">Página web de una cafetería</h3>
 
-              <div class="project-card__links">
-                <a href="#" class="project-link project-link--demo">
-                  <img src="./images/Union.svg" alt="Demo en vivo" />
-                  <span>Demo en vivo</span>
-                </a>
+                <div class="project-card__text-container">
+                  <p class="project-card__text">
+                    Desarrollo de una landing page responsiva para una cafetería
+                    siguiendo un brief de diseño. Incluye estructura semántica,
+                    maquetación con Flexbox, creación de secciones nuevas y un
+                    formulario de contacto funcional.
+                  </p>
 
-                <a href="#" class="project-link project-link--github">
-                  <img src="./images/icon-5.svg" alt="GitHub" />
-                  <span>GitHub</span>
-                </a>
-              </div>
-            </article>
+                  <p class="project-card__text">
+                    Logro: Implementé desde cero el diseño completo de la
+                    página, organicé el proyecto con buenas prácticas y publiqué
+                    la versión final utilizando GitHub Pages.
+                  </p>
+                </div>
+
+                <div class="project-card__links">
+                  <a
+                    href="https://riveradevs.github.io/web_project_portfolio_es/"
+                    class="project-link project-link--demo"
+                  >
+                    <img src="./images/Union.svg" alt="Demo en vivo" />
+                    <span>Demo en vivo</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/riveradevs"
+                    class="project-link project-link--github"
+                  >
+                    <img src="./images/icon-5.svg" alt="GitHub" />
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="project-column">
+              <article class="project-card project-card--image">
+                <img
+                  src="./images/Rectangle 5.jpg"
+                  alt="Imagen del segundo proyecto"
+                />
+
+                <div class="project-card__icons">
+                  <img src="./images/icon-5.svg" alt="HTML" />
+                  <img src="./images/icon-6.svg" alt="CSS" />
+                </div>
+              </article>
+
+              <article class="project-card project-card--info">
+                <h3 class="project-card__title">
+                  Responsive Portfolio Website
+                </h3>
+
+                <div class="project-card__text-container">
+                  <p class="project-card__text">
+                    Portfolio web responsivo desarrollado con HTML y CSS,
+                    enfocado en diseño moderno, estructura modular y adaptación
+                    fluida entre desktop, tablet y mobile.
+                  </p>
+                </div>
+
+                <div class="project-card__links">
+                  <a
+                    href="https://riveradevs.github.io/web_project_coffeeshop_es/"
+                    class="project-link project-link--demo"
+                  >
+                    <img src="./images/Union.svg" alt="Demo en vivo" />
+                    <span>Demo en vivo</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/riveradevs"
+                    class="project-link project-link--github"
+                  >
+                    <img src="./images/icon-5.svg" alt="GitHub" />
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div class="ellipse ellipse--bottom"></div>
-
+        <div class="ellipse ellipse--bottom"></div>
+      </main>
       <footer class="footer" id="contacto">
         <div class="footer__contact">
           <p class="footer__text">Contacto</p>
@@ -172,19 +200,22 @@
           </a>
 
           <div class="footer__social">
-            <a href="#" aria-label="Facebook">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
               <img src="./images/icon-fb.svg" alt="Facebook" />
             </a>
 
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
               <img src="./images/icon-insta.svg" alt="Instagram" />
             </a>
 
-            <a href="#" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/ignacio-javier-rivera-olvera-62a0b43b7/"
+              aria-label="LinkedIn"
+            >
               <img src="./images/icon-li.svg" alt="LinkedIn" />
             </a>
 
-            <a href="#" aria-label="X">
+            <a href="https://x.com/" aria-label="X">
               <img src="./images/icon-x.svg" alt="X" />
             </a>
           </div>
