@@ -37,9 +37,9 @@ El sitio incluye:
 project/
 │
 ├── index.html
+├── index.css
 │
 ├── style/
-│   ├── styles.css
 │   ├── header.css
 │   ├── skills.css
 │   ├── projects.css
