@@ -158,7 +158,8 @@
     width: auto;
     justify-content: center;
     gap: clamp(16px, 7vw, 32px);
-    margin-bottom: 80px;
+
+    margin-bottom: 0;
   }
 
   .footer__social img {

@@ -28,12 +28,18 @@
 
 /* FOOTER */
 .footer {
-  min-height: 200px;
+  position: relative;
+  z-index: 2;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+
+  /*
+    El espacio inferior REAL
+    ahora se controla aquí.
+  */
+  padding-bottom: 100px;
 }
 
 .footer__contact {
@@ -73,11 +79,10 @@
 
 .footer__social {
   width: 288px;
-
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 100px;
+  margin-bottom: 0;
 }
 
 .footer__social img {
@@ -93,4 +98,19 @@
 .footer__social img:hover {
   transform: translateY(-4px) scale(1.1);
   opacity: 0.8;
+}
+
+/* MOBILE */
+@media (max-width: 528px) {
+  .footer {
+    padding-bottom: 100px;
+  }
+
+  .footer__contact {
+    font-size: 28px;
+  }
+
+  .footer__social {
+    width: 240px;
+  }
 }
