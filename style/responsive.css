@@ -1,8 +1,21 @@
 /* ========================= */
 /* HEADER: 1440px → 529px */
 /* ========================= */
+@media (min-width: 1440px) {
+  .header__links {
+    clear: none;
+    margin-top: 30px;
+  }
+
+  .header__photo-wrapper {
+    position: relative;
+    left: 15px;
+  }
+}
+
 @media (max-width: 1439px) and (min-width: 529px) {
   .header__container {
+    clear: none;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
@@ -14,11 +27,20 @@
   }
 
   .header__description {
+    max-width: 793px;
     width: 100%;
     height: auto;
   }
 
+  .header__links {
+    clear: none;
+    margin-top: 30px;
+  }
+
   .header__photo-wrapper {
+    position: relative;
+    left: 15px;
+
     width: clamp(200px, 28vw, 387px);
     aspect-ratio: 387 / 500;
     height: auto;
@@ -131,6 +153,7 @@
   .skills__icons {
     flex-wrap: wrap;
     gap: 40px 70px;
+    justify-content: flex-start;
   }
 
   .projects__grid {
