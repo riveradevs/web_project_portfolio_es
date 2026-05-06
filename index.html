@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style/normalize.css" />
     <link rel="stylesheet" href="./style/index.css" />
     <link rel="stylesheet" href="./style/header.css" />
     <link rel="stylesheet" href="./style/skills.css" />
@@ -52,18 +55,24 @@
               class="header__link"
               href="./files/CV_Ignacio_Rivera.pdf"
               download
-              >Descargar CV</a
             >
+              Descargar CV
+            </a>
+
             <a
               class="header__link"
               href="https://github.com/riveradevs/"
               target="_blank"
-              >Enlace a GitHub</a
+              rel="noopener noreferrer"
             >
+              Enlace a GitHub
+            </a>
+
             <a class="header__link" href="#contacto">Hablemos</a>
           </nav>
         </div>
       </header>
+
       <main>
         <section class="skills">
           <h2 class="skills__title">Habilidades y herramientas</h2>
@@ -123,16 +132,20 @@
 
                 <div class="project-card__links">
                   <a
-                    href="https://riveradevs.github.io/web_project_portfolio_es/"
+                    href="https://riveradevs.github.io/web_project_coffeeshop_es/"
                     class="project-link project-link--demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src="./images/Union.svg" alt="Demo en vivo" />
                     <span>Demo en vivo</span>
                   </a>
 
                   <a
-                    href="https://github.com/riveradevs"
+                    href="https://github.com/riveradevs/web_project_coffeeshop_es"
                     class="project-link project-link--github"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src="./images/icon-5.svg" alt="GitHub" />
                     <span>GitHub</span>
@@ -145,12 +158,12 @@
               <article class="project-card project-card--image">
                 <img
                   src="./images/Rectangle 5.jpg"
-                  alt="Imagen del segundo proyecto"
+                  alt="Imagen del proyecto Responsive Portfolio Website"
                 />
 
                 <div class="project-card__icons">
-                  <img src="./images/icon-5.svg" alt="HTML" />
-                  <img src="./images/icon-6.svg" alt="CSS" />
+                  <img src="./images/icon-1.svg" alt="HTML" />
+                  <img src="./images/icon-2.svg" alt="CSS" />
                 </div>
               </article>
 
@@ -169,16 +182,20 @@
 
                 <div class="project-card__links">
                   <a
-                    href="https://riveradevs.github.io/web_project_coffeeshop_es/"
+                    href="https://riveradevs.github.io/web_project_portfolio_es/"
                     class="project-link project-link--demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src="./images/Union.svg" alt="Demo en vivo" />
                     <span>Demo en vivo</span>
                   </a>
 
                   <a
-                    href="https://github.com/riveradevs"
+                    href="https://github.com/riveradevs/web_project_portfolio_es"
                     class="project-link project-link--github"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src="./images/icon-5.svg" alt="GitHub" />
                     <span>GitHub</span>
@@ -191,6 +208,7 @@
 
         <div class="ellipse ellipse--bottom"></div>
       </main>
+
       <footer class="footer" id="contacto">
         <div class="footer__contact">
           <p class="footer__text">Contacto</p>
@@ -200,22 +218,39 @@
           </a>
 
           <div class="footer__social">
-            <a href="https://www.facebook.com/" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <img src="./images/icon-fb.svg" alt="Facebook" />
             </a>
 
-            <a href="https://www.instagram.com/" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <img src="./images/icon-insta.svg" alt="Instagram" />
             </a>
 
             <a
               href="https://www.linkedin.com/in/ignacio-javier-rivera-olvera-62a0b43b7/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
               <img src="./images/icon-li.svg" alt="LinkedIn" />
             </a>
 
-            <a href="https://x.com/" aria-label="X">
+            <a
+              href="https://x.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
               <img src="./images/icon-x.svg" alt="X" />
             </a>
           </div>

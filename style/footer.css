@@ -99,18 +99,3 @@
   transform: translateY(-4px) scale(1.1);
   opacity: 0.8;
 }
-
-/* MOBILE */
-@media (max-width: 528px) {
-  .footer {
-    padding-bottom: 100px;
-  }
-
-  .footer__contact {
-    font-size: 28px;
-  }
-
-  .footer__social {
-    width: 240px;
-  }
-}
