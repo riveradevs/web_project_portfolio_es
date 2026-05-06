@@ -146,6 +146,12 @@ Las fuentes se cargan localmente mediante archivos `.woff2`.
 
 El proyecto puede visualizarse mediante GitHub Pages.
 
+Enlace del proyecto:
+
+```text
+https://riveradevs.github.io/web_project_portfolio_es/
+```
+
 Configuración recomendada:
 
 ```text
